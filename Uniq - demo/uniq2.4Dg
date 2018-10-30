@@ -1,0 +1,115 @@
+#platform "uLCD-24PT"
+
+// Program Skeleton 1.2 generated 17-May-18 1:32:09 PM
+
+#inherit "4DGL_16bitColours.fnc"
+
+#inherit "VisualConst.inc"
+
+#inherit "uniq2Const.inc"
+
+func main()
+//  Uncomment the following if uSD images, fonts or strings used.
+
+    print("Starting\n") ;
+    while(!media_Init())
+        putstr("Drive not mounted...");
+        pause(200);
+        gfx_Cls();
+        pause(200);
+    wend
+
+    gfx_Set(SCREEN_MODE,PORTRAIT) ;
+    gfx_Cls();
+
+    print("   GALILEO HAND   \n");      // replace with your code
+    print("   version 4.0    \n");
+    print("                  \n");
+    print("Is  a low-cost  3D\n") ;
+    print("Printed prosthesis\n");
+    print("Released as DIYkit\n");
+    print("Focused on  people\n");
+    print("With  below  elbow\n");
+    print("Disarticulation.  \n");
+    print("                  \n");
+    print("Julio E. Fajardo  \n");
+    print("Frankie     \n");
+    print("Eric Rohmer       \n");
+    print("                  \n");
+    print("DAC, FEEC, UNICAMP\n");
+    print("Campinas, Feb-2018\n");
+
+    pause(3000);
+
+    var char := '0';
+    var state := 0;
+    com_Init(char,7,0);
+    gfx_Cls();
+    txt_MoveCursor(0, 0);       // move to required text position (font size related)
+    repeat
+      if(com_Count())
+        char := serin();
+        switch(state)
+          case 0:
+            if(char=='*')
+              state:=1;
+              char:='';
+            endif
+            break;
+          case 1:
+              txt_MoveCursor(7, 0);
+              switch(char)
+                case '1':
+                  print("   Relaxed Hand    ");
+                  pause(1000);
+
+                  // Form1 1.1 generated 17-May-18 1:24:16 PM
+                  media_SetAdd(iForm1H, iForm1L) ;      // point to the Form1 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Image(0, 0) ;            // show image
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+                  state := 2;
+                  break;
+                case '2':
+                  break;
+                case '3':
+                  break;
+                case '4':
+                  break;
+                case '5':
+                  break;
+                case '6':
+                  break;
+                case '7':
+                  break;
+                case '8':
+                  break;
+                case '9':
+                  break;
+                case ':':
+                  break;
+                case ';':
+                  break;
+                case '<':
+                  break;
+                case '=':
+                  break;
+                case '>':
+                  break;
+              endswitch
+            break;
+            char:='';
+          case 2:
+            print("Objetc: ");
+            if(char!='#')
+              putch(char);
+            else
+              state := 3;
+            endif
+            break;
+        endswitch
+      endif
+    forever
+endfunc
+

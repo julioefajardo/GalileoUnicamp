@@ -1,0 +1,240 @@
+#platform "GOLDELOX"
+
+// Program Skeleton 1.0 generated 17-May-18 12:34:33 PM
+
+#inherit "4DGL_16bitColours.fnc"
+
+#inherit "VisualConst.inc"
+
+#inherit "uniqConst.inc"
+
+func main()
+//  Uncomment the following if uSD images, fonts or strings used.
+
+    print("Starting\n") ;
+    while(!media_Init())
+        putstr("Drive not mounted...");
+        pause(200);
+        gfx_Cls();
+        pause(200);
+    wend
+
+    gfx_Set(SCREEN_MODE,PORTRAIT) ;
+    gfx_Cls();
+
+    print("   GALILEO HAND   \n");      // replace with your code
+    print("   version 4.0    \n");
+    print("                  \n");
+    print("Is  a low-cost  3D\n") ;
+    print("Printed prosthesis\n");
+    print("Released as DIYkit\n");
+    print("Focused on  people\n");
+    print("With  below  elbow\n");
+    print("Disarticulation.  \n");
+    print("                  \n");
+    print("Julio E. Fajardo  \n");
+    print("Frank C. V. Lima  \n");
+    print("Eric Rohmer       \n");
+    print("                  \n");
+    print("DAC, FEEC, UNICAMP\n");
+    print("Campinas, Feb-2018\n");
+
+    pause(3000);
+
+    var char := '0';
+    var state := 0;
+    com_Init(char,7,0);
+    gfx_Cls();
+    txt_MoveCursor(0, 0);       // move to required text position (font size related)
+    repeat
+      if(com_Count())
+        char := serin();
+        switch(state)
+          case 0:
+            if(char=='*')
+              gfx_Cls();
+              state:=1;
+              char:='';
+            endif
+            break;
+          case 1:
+              switch(char)
+                case '1':
+                  txt_MoveCursor(12, 0);
+                  print("   Relaxed Hand   ");
+                  pause(1000);
+
+                  // Video2 1.0 generated 31/05/2011 07:47:41
+                  media_SetAdd(iVideo2H, iVideo2L) ;      // point to the Video2 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 12) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+                  state := 2;
+                  break;
+
+
+                case '2':
+                  txt_MoveCursor(12, 0);
+                  print("  Active Index  \n");
+                  print("       Grip       \n");
+
+                  // Video1 1.0 generated 17-May-18 1:40:17 PM
+                  media_SetAdd(iVideo1H, iVideo1L) ;      // point to the Video1 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 18) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+                  state := 2;
+                  break;
+
+                case '3':
+                  txt_MoveCursor(12, 0);
+                  print("   Column Grip    ");
+                  state:=2;
+                  break;
+
+                case '4':
+                  txt_MoveCursor(12, 0);
+                  print("  Abduction Grip  ");
+                  state:=2;
+                  break;
+
+                case '5':
+                 txt_MoveCursor(12, 0);
+                  print("   Finger Point   ");
+
+                    // Video3 1.0 generated 31/05/2011 07:48:14
+                    media_SetAdd(iVideo3H, iVideo3L) ;      // point to the Video3 image
+                    gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                    media_Video(4, 11) ;                     // show video
+                    gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+
+                  state:=2;
+                  break;
+
+                case '6':
+                 txt_MoveCursor(12, 0);
+                  print("    Hook Grip     ");
+
+                  // Video4 1.0 generated 31/05/2011 07:51:35
+                  media_SetAdd(iVideo4H, iVideo4L) ;      // point to the Video4 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 10) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+                 state:=2;
+                  break;
+
+                case '7':
+                 txt_MoveCursor(12, 0);
+                  print("     Key Grip     ");
+
+                  // Video5 1.0 generated 31/05/2011 08:08:04
+                  media_SetAdd(iVideo5H, iVideo5L) ;      // point to the Video5 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 10) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+                  state:=2;
+                  break;
+
+                case '8':
+                 txt_MoveCursor(12, 0);
+                  print("    Mouse Grip    ");
+                  state:=2;
+                  break;
+
+                case '9':
+                 txt_MoveCursor(12, 0);
+                  print("  Open Palm Grip  ");
+
+                  // Video9 1.0 generated 31/05/2011 08:17:04
+                  media_SetAdd(iVideo9H, iVideo9L) ;      // point to the Video9 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 9) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+                  state:=2;
+                  break;
+
+                case ':':
+                 txt_MoveCursor(12, 0);
+                  print("    Pinch Grip    ");
+
+
+                // Video8 1.0 generated 31/05/2011 08:36:44
+                media_SetAdd(iVideo8H, iVideo8L) ;      // point to the Video8 image
+                gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                media_Video(4, 9) ;                     // show video
+                gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+
+
+
+                  state:=2;
+                  break;
+
+                case ';':
+                 txt_MoveCursor(12, 0);
+                  print("    Power Grip    ");
+
+                  // Video7 1.0 generated 31/05/2011 08:27:26
+                  media_SetAdd(iVideo7H, iVideo7L) ;      // point to the Video7 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 9) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+
+                  state:=2;
+                  break;
+
+                case '<':
+                 txt_MoveCursor(12, 0);
+                  print(" Precision Close  \n");
+                  print("       Grip       \n");
+                  state:=2;
+                  break;
+
+                case '=':
+                 txt_MoveCursor(12, 0);
+                  print("  Precision Open  \n");
+                  print("       Grip       \n");
+                  state:=2;
+                  break;
+
+                case '>':
+                 txt_MoveCursor(12, 0);
+                  print("   Tripod Grip    ");
+
+                  // Video6 1.0 generated 31/05/2011 08:36:22
+                  media_SetAdd(iVideo6H, iVideo6L) ;      // point to the Video6 image
+                  gfx_Set(SCREEN_MODE,LANDSCAPE) ;        // On uLCD-144-G2 videos+images only work in LANDSCAPE
+                  media_Video(4, 9) ;                     // show video
+                  gfx_Set(SCREEN_MODE,PORTRAIT) ;      // Restore 'operating' orientation
+
+
+                  state:=2;
+                  break;
+
+              endswitch
+
+           break;
+           case 2:
+            if(char!='#')
+              txt_MoveCursor(13, 0);
+              //putch(char);
+              //break;
+              state := 0;
+            else
+              gfx_Cls();
+              state := 0;
+
+            endif
+            break;
+        endswitch
+      endif
+    forever
+endfunc
+

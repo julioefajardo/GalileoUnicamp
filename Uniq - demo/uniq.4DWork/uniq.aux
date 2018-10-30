@@ -1,0 +1,195 @@
+==============================================================
+==============================================================
+4DGL Compiler 2.8.0.3 -- Copyright 2004-2015 4D Labs
+** C:\Users\Destine_2\Desktop\Uniq\uniq.4dg
+compiled Tue May 31 10:46:12 2011
+
+==============================================================
+==============================================================
+
+
+No Ref for file
+[LINKING]
+function 1, main, address 643
+(main entry point)
+stack usage 4 + 4
+function 'main' requires no arguments
+function 'main' has no return value
+
+[RESERVED WORDS]
+#inherit
+#LISTCODE
+#MODE
+#STACK
+#OPTIMIZE_ON
+#OPTIMIZE_OFF
+byte
+word
+dword
+float
+private
+#IF
+#IFNOT
+#ELSE
+#ENDIF
+#CONST
+#constant
+#USE
+USING
+func
+endfunc
+var
+#STOP
+#DATA
+#ASM
+#END
+#platform
+EXISTS
+#ERROR
+#MESSAGE
+#NOTICE
+sizeof
+argcount
+if
+else
+endif
+while
+wend
+repeat
+until
+forever
+return
+break
+continue
+for
+next
+switch
+case
+default
+endswitch
+print
+goto
+gosub
+endsub
+mcall
+lookup8
+lookup16
+
+[MACRO]
+
+[CONSTANTS]
+__MAXMEM                          000000FF        255  (usage 1)
+__MAXPROG                         00002400       9216  (usage 1)
+GOLDELOX                          00000001          1  (usage 3)
+iVideo1H                          00000000          0  (usage 3)
+iVideo1L                          00000000          0  (usage 3)
+iVideo2H                          0000000B         11  (usage 3)
+iVideo2L                          00005600      22016  (usage 3)
+iVideo3H                          00000012         18  (usage 3)
+iVideo3L                          00008800      34816  (usage 3)
+iVideo4H                          0000001E         30  (usage 3)
+iVideo4L                          00004000      16384  (usage 3)
+iVideo5H                          0000002A         42  (usage 3)
+iVideo5L                          00003C00      15360  (usage 3)
+iVideo6H                          00000036         54  (usage 3)
+iVideo6L                          00003800      14336  (usage 3)
+iVideo7H                          00000042         66  (usage 3)
+iVideo7L                          00005400      21504  (usage 3)
+iVideo8H                          0000004E         78  (usage 3)
+iVideo8L                          0000AE00      44544  (usage 3)
+iVideo9H                          0000005A         90  (usage 3)
+iVideo9L                          0000CA00      51712  (usage 3)
+LANDSCAPE                         00000000          0  (usage 27)
+PORTRAIT                          00000002          2  (usage 30)
+SCREEN_MODE                       00000007          7  (usage 57)
+
+[PmmC FUNCTIONS]
+com_Count                         FFFFFFA7         -89  args=0 r=1  (usage 3)
+com_Init                          FFFFFFA9         -87  args=3 r=0  (usage 3)
+gfx_Cls                           FFFFFFD7         -41  args=0 r=0  (usage 15)
+gfx_Set                           FFFFFFD8         -40  args=2 r=0  (usage 57)
+media_Init                        FFFFFFB1         -79  args=0 r=1  (usage 3)
+media_SetAdd                      FFFFFFB9         -71  args=2 r=0  (usage 27)
+media_Video                       FFFFFFBB         -69  args=2 r=0  (usage 27)
+pause                             FFFFFFFA          -6  args=1 r=0  (usage 12)
+putch                             FFFFFFFE          -2  args=1 r=0  (usage 3)
+putstr                            FFFFFFF7          -9  args=1 r=1  (usage 3)
+serin                             FFFFFFFF          -1  args=0 r=1  (usage 3)
+txt_MoveCursor                    FFFFFFE4         -28  args=2 r=0  (usage 48)
+
+[USER FUNCTIONS]
+
+[GLOBAL VARIABLES]
+
+[PRIVATE VARIABLES]
+
+[DATA]
+0007: 53 74 61 72 74 69 6E 67 0A 00 44 72 69 76 65 20     Starting..Drive 
+0017: 6E 6F 74 20 6D 6F 75 6E 74 65 64 2E 2E 2E 00 20     not mounted.... 
+0027: 20 20 47 41 4C 49 4C 45 4F 20 48 41 4E 44 20 20       GALILEO HAND  
+0037: 20 0A 00 20 20 20 76 65 72 73 69 6F 6E 20 34 2E      ..   version 4.
+0047: 30 20 20 20 20 0A 00 20 20 20 20 20 20 20 20 20     0    ..         
+0057: 20 20 20 20 20 20 20 20 20 0A 00 49 73 20 20 61              ..Is  a
+0067: 20 6C 6F 77 2D 63 6F 73 74 20 20 33 44 0A 00 50      low-cost  3D..P
+0077: 72 69 6E 74 65 64 20 70 72 6F 73 74 68 65 73 69     rinted prosthesi
+0087: 73 0A 00 52 65 6C 65 61 73 65 64 20 61 73 20 44     s..Released as D
+0097: 49 59 6B 69 74 0A 00 46 6F 63 75 73 65 64 20 6F     IYkit..Focused o
+00A7: 6E 20 20 70 65 6F 70 6C 65 0A 00 57 69 74 68 20     n  people..With 
+00B7: 20 62 65 6C 6F 77 20 20 65 6C 62 6F 77 0A 00 44      below  elbow..D
+00C7: 69 73 61 72 74 69 63 75 6C 61 74 69 6F 6E 2E 20     isarticulation. 
+00D7: 20 0A 00 4A 75 6C 69 6F 20 45 2E 20 46 61 6A 61      ..Julio E. Faja
+00E7: 72 64 6F 20 20 0A 00 46 72 61 6E 6B 20 43 2E 20     rdo  ..Frank C. 
+00F7: 56 2E 20 4C 69 6D 61 20 20 0A 00 45 72 69 63 20     V. Lima  ..Eric 
+0107: 52 6F 68 6D 65 72 20 20 20 20 20 20 20 0A 00 44     Rohmer       ..D
+0117: 41 43 2C 20 46 45 45 43 2C 20 55 4E 49 43 41 4D     AC, FEEC, UNICAM
+0127: 50 0A 00 43 61 6D 70 69 6E 61 73 2C 20 46 65 62     P..Campinas, Feb
+0137: 2D 32 30 31 38 0A 00 D6 5B F3 5B 52 5F 81 5F 11     -2018..÷[Û[R_Å_.
+0147: 5C 61 5C B2 5C D0 5C EE 5C 35 5D 7C 5D C3 5D E1     \a\≤\–\Ó\5]|]√]·
+0157: 5D 28 5E 6F 5E B6 5E DF 5E 08 5F 4F 5F 20 20 20     ](^o^∂^ﬂ^._O_   
+0167: 52 65 6C 61 78 65 64 20 48 61 6E 64 20 20 20 00     Relaxed Hand   .
+0177: 20 20 41 63 74 69 76 65 20 49 6E 64 65 78 20 20       Active Index  
+0187: 0A 00 20 20 20 20 20 20 20 47 72 69 70 20 20 20     ..       Grip   
+0197: 20 20 20 20 0A 00 20 20 20 43 6F 6C 75 6D 6E 20         ..   Column 
+01A7: 47 72 69 70 20 20 20 20 00 20 20 41 62 64 75 63     Grip    .  Abduc
+01B7: 74 69 6F 6E 20 47 72 69 70 20 20 00 20 20 20 46     tion Grip  .   F
+01C7: 69 6E 67 65 72 20 50 6F 69 6E 74 20 20 20 00 20     inger Point   . 
+01D7: 20 20 20 48 6F 6F 6B 20 47 72 69 70 20 20 20 20        Hook Grip    
+01E7: 20 00 20 20 20 20 20 4B 65 79 20 47 72 69 70 20      .     Key Grip 
+01F7: 20 20 20 20 00 20 20 20 20 4D 6F 75 73 65 20 47         .    Mouse G
+0207: 72 69 70 20 20 20 20 00 20 20 4F 70 65 6E 20 50     rip    .  Open P
+0217: 61 6C 6D 20 47 72 69 70 20 20 00 20 20 20 20 50     alm Grip  .    P
+0227: 69 6E 63 68 20 47 72 69 70 20 20 20 20 00 20 20     inch Grip    .  
+0237: 20 20 50 6F 77 65 72 20 47 72 69 70 20 20 20 20       Power Grip    
+0247: 00 20 50 72 65 63 69 73 69 6F 6E 20 43 6C 6F 73     . Precision Clos
+0257: 65 20 20 0A 00 20 20 50 72 65 63 69 73 69 6F 6E     e  ..  Precision
+0267: 20 4F 70 65 6E 20 20 0A 00 20 20 20 54 72 69 70      Open  ..   Trip
+0277: 6F 64 20 47 72 69 70 20 20 20 20 00                 od Grip    .
+
+[__MAXPROG]
+9216
+[__MAXMEM]
+255
+
+[PROGRAM]
+main
+[CODESIZE]
+1925
+[MEMSIZE]
+0
+[ARGCOUNT]
+0
+[RETURNS]
+NO
+[STACKSIZE]
+0 (AUTO)
+[STACK_ESTIMATE]
+8   (nb:- worst case estimate)
+[MODE]
+0
+
+[PROJECT]
+C:\Users\Destine_2\Desktop\Uniq\uniq.4dg
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\GOLDELOX.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\VisualConst.inc
+C:\Users\Destine_2\Desktop\Uniq\uniq.4DWork\uniqConst.inc

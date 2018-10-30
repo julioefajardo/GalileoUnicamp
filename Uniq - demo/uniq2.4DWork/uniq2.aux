@@ -1,0 +1,152 @@
+No Ref for file
+[LINKING]
+function 1, main, address 0
+(main entry point)
+stack usage 4 + 4
+No Ref for file
+No Ref for file
+function 'main' requires no arguments
+function 'main' has no return value
+
+[RESERVED WORDS]
+#inherit
+#LISTCODE
+#MODE
+#STACK
+#OPTIMIZE_ON
+#OPTIMIZE_OFF
+byte
+word
+dword
+float
+private
+#IF
+#IFNOT
+#ELSE
+#ENDIF
+#CONST
+#constant
+#USE
+USING
+func
+endfunc
+var
+#STOP
+#DATA
+#ASM
+#END
+#platform
+EXISTS
+#ERROR
+#MESSAGE
+#NOTICE
+sizeof
+argcount
+if
+else
+endif
+while
+wend
+repeat
+until
+forever
+return
+break
+continue
+for
+next
+switch
+case
+default
+endswitch
+print
+goto
+gosub
+endsub
+mcall
+lookup8
+lookup16
+
+[MACRO]
+
+[CONSTANTS]
+LANDSCAPE                         00000000          0  (usage 3)
+PICASO                            00000001          1  (usage 3)
+PORTRAIT                          00000002          2  (usage 6)
+SCREEN_MODE                       00000017         23  (usage 9)
+
+[PmmC FUNCTIONS]
+com_Count                         FFFFFF86        -122  args=0 r=1  (usage 3)
+com_Init                          FFFFFF88        -120  args=3 r=0  (usage 3)
+gfx_Cls                           FFFFFFCD         -51  args=0 r=0  (usage 9)
+gfx_Set                           FFFFFFCE         -50  args=2 r=0  (usage 9)
+media_Image                       FFFFFF8B        -117  args=2 r=0  (usage 3)
+media_Init                        FFFFFF89        -119  args=0 r=1  (usage 3)
+media_SetAdd                      FFFFFF93        -109  args=2 r=0  (usage 3)
+pause                             FFFFFFFA          -6  args=1 r=0  (usage 12)
+putch                             FFFFFFFE          -2  args=1 r=0  (usage 3)
+putstr                            FFFFFFF7          -9  args=1 r=1  (usage 3)
+serin                             FFFFFFFF          -1  args=0 r=1  (usage 3)
+txt_MoveCursor                    FFFFFFE9         -23  args=2 r=0  (usage 6)
+
+[USER FUNCTIONS]
+
+[GLOBAL VARIABLES]
+
+[PRIVATE VARIABLES]
+
+[DATA]
+0007: 53 74 61 72 74 69 6E 67 0A 00 44 72 69 76 65 20     Starting..Drive 
+0017: 6E 6F 74 20 6D 6F 75 6E 74 65 64 2E 2E 2E 00 20     not mounted.... 
+0027: 20 20 47 41 4C 49 4C 45 4F 20 48 41 4E 44 20 20       GALILEO HAND  
+0037: 20 0A 00 20 20 20 76 65 72 73 69 6F 6E 20 34 2E      ..   version 4.
+0047: 30 20 20 20 20 0A 00 20 20 20 20 20 20 20 20 20     0    ..         
+0057: 20 20 20 20 20 20 20 20 20 0A 00 49 73 20 20 61              ..Is  a
+0067: 20 6C 6F 77 2D 63 6F 73 74 20 20 33 44 0A 00 50      low-cost  3D..P
+0077: 72 69 6E 74 65 64 20 70 72 6F 73 74 68 65 73 69     rinted prosthesi
+0087: 73 0A 00 52 65 6C 65 61 73 65 64 20 61 73 20 44     s..Released as D
+0097: 49 59 6B 69 74 0A 00 46 6F 63 75 73 65 64 20 6F     IYkit..Focused o
+00A7: 6E 20 20 70 65 6F 70 6C 65 0A 00 57 69 74 68 20     n  people..With 
+00B7: 20 62 65 6C 6F 77 20 20 65 6C 62 6F 77 0A 00 44      below  elbow..D
+00C7: 69 73 61 72 74 69 63 75 6C 61 74 69 6F 6E 2E 20     isarticulation. 
+00D7: 20 0A 00 4A 75 6C 69 6F 20 45 2E 20 46 61 6A 61      ..Julio E. Faja
+00E7: 72 64 6F 20 20 0A 00 46 72 61 6E 6B 69 65 20 20     rdo  ..Frankie  
+00F7: 20 20 20 0A 00 45 72 69 63 20 52 6F 68 6D 65 72        ..Eric Rohmer
+0107: 20 20 20 20 20 20 20 0A 00 44 41 43 2C 20 46 45            ..DAC, FE
+0117: 45 43 2C 20 55 4E 49 43 41 4D 50 0A 00 43 61 6D     EC, UNICAMP..Cam
+0127: 70 69 6E 61 73 2C 20 46 65 62 2D 32 30 31 38 0A     pinas, Feb-2018.
+0137: 00 53 01 6A 01 03 02 2A 02 92 01 D3 01 D6 01 D9     .S.j...*.’.Ó.Ö.Ù
+0147: 01 DC 01 DF 01 E2 01 E5 01 E8 01 EB 01 EE 01 F1     .Ü.ß.â.å.è.ë.î.ñ
+0157: 01 F4 01 F7 01 FA 01 20 20 20 52 65 6C 61 78 65     .ô.÷.ú.   Relaxe
+0167: 64 20 48 61 6E 64 20 20 20 20 00 4F 62 6A 65 74     d Hand    .Objet
+0177: 63 3A 20 00                                         c: .
+
+[__MAXPROG]
+32768
+[__MAXMEM]
+32767
+
+[PROGRAM]
+main
+[CODESIZE]
+558
+[MEMSIZE]
+1
+[ARGCOUNT]
+0
+[RETURNS]
+NO
+[STACKSIZE]
+0 (AUTO)
+[STACK_ESTIMATE]
+8   (nb:- worst case estimate)
+[MODE]
+0
+
+[PROJECT]
+C:\Users\User1\Desktop\Uniq\uniq2.4Dg
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\uLCD-24PT.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\PicasoFunctions.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\VisualConst.inc
+C:\Users\User1\Desktop\Uniq\uniq2.4DWork\uniq2Const.inc

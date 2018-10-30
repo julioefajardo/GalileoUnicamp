@@ -1,0 +1,214 @@
+﻿Version     0.0
+Platform    uLCD-144-G2-P
+PlatRes     128x128
+Depends
+end
+Options
+    Visualizer
+    Speed                        9600
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+end
+Form
+    Name                         Form1
+    Alias                        Form1
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video1
+    Alias                        Video1
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       75
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        hand.gif
+    Width                        99
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video2
+    Alias                        Video2
+    Frames.First                 0
+    Frames.Last                  30
+    Frames.FrameDelay            100
+    Height                       76
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        relaxed.gif
+    Width                        100
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video3
+    Alias                        Video3
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       76
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        point.gif
+    Width                        101
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video4
+    Alias                        Video4
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       77
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        hook.gif
+    Width                        102
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video5
+    Alias                        Video5
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       77
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        key.gif
+    Width                        102
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video6
+    Alias                        Video6
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       77
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        tripod.gif
+    Width                        103
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video7
+    Alias                        Video7
+    Frames.First                 0
+    Frames.Last                  50
+    Frames.FrameDelay            100
+    Height                       77
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        power.gif
+    Width                        103
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video8
+    Alias                        Video8
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       77
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        pinch.gif
+    Width                        103
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Video
+    Name                         Video9
+    Alias                        Video9
+    Frames.First                 0
+    Frames.Last                  49
+    Frames.FrameDelay            100
+    Height                       77
+    Left                         16
+    Source.Height                128
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 128
+    Top                          4
+    Video                        open.gif
+    Width                        103
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
